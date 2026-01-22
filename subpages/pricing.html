@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu | Culinary for Royalty</title>
+
+        <!-- CSS LINK -->
+        <link rel="stylesheet" href="../styles.css">
+
+        <!-- JAVASCRIPT LINK -->
+        <script src="../script.js" defer></script>
+
+        <!-- TAB ICON -->
+        <link rel="icon" href="../images/logo-icon.png">
+
+        <!-- FONT AWESOME LINK -->
+        <script src="https://kit.fontawesome.com/26030cfeae.js" crossorigin="anonymous"></script>
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rouge+Script&display=swap" rel="stylesheet">
+
+    <body class="subpage-pricing">
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <div class="empty"></div>
+                <div>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="empty"></div>   
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+         <main>
+            <div class="price-box">
+                <h1>How Much Will Your Service Cost?</h1>
+                <hr>
+
+                <div class="service-box">
+                    <h2>Choose a Service:</h2>
+                    <select name="service" id="service" onchange="serviceChange(this)">
+                        <option value="none" selected>-- Select --</option>
+                        <option value="private-party">Private Party</option>
+                        <option value="meal-prep">Meal Prep</option>
+                        <option value="catering">Catering</option>
+                    </select>
+                </div>
+                <hr>
+
+                <div id="private-party-details" class="service-details hidden">
+                    <div class="private-party-options">
+                        <label for="party-guests"><h3>Number of Guests</h3></label>
+                        <input type="number" name="party-guests" id="party-guests" min="1">
+                        <h3>Service Style</h3>
+                        <select name="private-party-service" id="private-party-service">
+                            <option value="basic">Basic</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="fine-dining">Fine Dining</option>
+                        </select>
+                    </div>
+                    <hr>
+                </div>
+
+                <div id="meal-prep-details" class="service-details hidden">
+                    <div class="meal-prep-options">
+                        <h3>Meals Per Week</h3>
+                        <input type="number" min="10" name="meals" id="meals">
+                        <p class="meal-prep-disclaimer">
+                            <i>Minimum of 10 meals a week. Grocery costs are not included.</i>
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div id="catering-details" class="service-details hidden">
+                    <div class="catering-options">
+                        <label for="catering-guests"><h3>Number of Guests</h3></label>
+                        <input type="number" name="catering-guests" id="catering-guests" min="1">
+                        <h3>Service Style</h3>
+                        <select name="catering-service" id="catering-service">
+                            <option value="basic">Basic</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="elevated">Elevated</option>
+                        </select>
+                    </div>
+                    <hr>
+                </div>
+                <button class="button" onclick="calculate(this)">Calculate Price</button>
+                <div id="estimated-quote"></div>
+            </div>
+         </main>
+    </body>
+
+</html>
