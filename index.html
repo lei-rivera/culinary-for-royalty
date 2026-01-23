@@ -39,12 +39,15 @@
          <link rel="icon" href="images/logo-icon.webp">
 
         <!-- FONT AWESOME LINK -->
-        <script src="https://kit.fontawesome.com/26030cfeae.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/26030cfeae.js" crossorigin="anonymous" async></script>
 
         <!-- GOOGLE FONT -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rouge+Script&display=swap" rel="stylesheet">
+
+        <!-- LOAD CRITICAL IMAGES -->
+        <link rel="preload" href="images/header.webp" as="image">
     </head>
 
     <body>
@@ -66,7 +69,13 @@
 
         <!-- MAIN -->
         <main>
-            <h1 class="logo"><img src="images/logo.webp" alt="Culinary for Royalty"></h1>
+            <h1 class="logo">
+                <img
+                    src="images/logo.webp"
+                    alt="Culinary for Royalty"
+                    srcset="images/logo.webp 400w, images/logo.webp 800w"
+                >
+            </h1>
         </main>
 
         <!-- SECTION 1: EXPERIENCES -->
@@ -76,7 +85,12 @@
 
             <div class="services">
                 <div class="service">
-                    <div class="service-img"><img src="images/jay-wennington-N_Y88TWmGwA-unsplash.webp" alt="plate of gourmet food at a busy table" loading="lazy"></div>
+                    <div class="service-img">
+                        <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.webp"
+                        srcset="images/jay-wennington-N_Y88TWmGwA-unsplash-400.webp 400w, images/jay-wennington-N_Y88TWmGwA-unsplash-800.webp 800w, images/jay-wennington-N_Y88TWmGwA-unsplash-1200.webp 1200w" 
+                        sizes="(max-width: 1180px) 100vw, 30vw"
+                        alt="plate of gourmet food at a busy table"
+                        loading="lazy"></div>
                     <h4 class="service-name">Private Dinners & Signature Events</h4>
                     <p class="service-desc">
                         Enjoy exquisite, chef-curated meals using seasonal, locally sourced ingredients — prepared fresh in your kitchen and tailored to your guests' exact tastes. 
@@ -86,7 +100,12 @@
                     </p>
                 </div>
                 <div class="service">
-                    <div class="service-img"><img src="images/leanna-myers-YB9VU4necQo-unsplash.webp" alt="food in meal prep containers" loading="lazy"></div>
+                    <div class="service-img">
+                        <img src="images/leanna-myers-YB9VU4necQo-unsplash.webp"
+                        alt="food in meal prep containers" 
+                        srcset="images/leanna-myers-YB9VU4necQo-unsplash.webp 400w, images/leanna-myers-YB9VU4necQo-unsplash.webp 800w, images/leanna-myers-YB9VU4necQo-unsplash.webp 1200w" 
+                        sizes="(max-width: 1180px) 100vw, 30vw"
+                        loading="lazy"></div>
                     <h4 class="service-name">Weekly & Monthly Meal Plans</h4>
                     <p class="service-desc">
                         Custom meal plans designed around your taste, schedule, and health goals — with shopping lists and easy-to-follow prep guides included. 
@@ -96,7 +115,12 @@
                     </p>
                 </div>
                 <div class="service">
-                    <div class="service-img"><img src="images/or-hakim-S2Eql9vHN3o-unsplash.webp" alt="chef chopping tomatoes on a cutting board" loading="lazy"></div>
+                    <div class="service-img">
+                        <img src="images/or-hakim-S2Eql9vHN3o-unsplash.webp" 
+                        srcset="images/or-hakim-S2Eql9vHN3o-unsplash.webp 400w, images/or-hakim-S2Eql9vHN3o-unsplash.webp 800w, images/or-hakim-S2Eql9vHN3o-unsplash.webp 1200w" 
+                        sizes="(max-width: 1180px) 100vw, 30vw"
+                        alt="chef chopping tomatoes on a cutting board" loading="lazy">
+                    </div>
                     <h4 class="service-name">Permanent Private Chef Services</h4>
                     <p class="service-desc">
                         Experience the ease of having a dedicated chef handle your daily meals — tailored to your preferences, dietary needs, and schedule. 
@@ -127,34 +151,64 @@
 
             <div class="gallery-container">
                 <div class="gallery-item">
-                    <img src="images/food-ex-1.webp" alt="Grilled Chipotle Chicken Tex Mex" loading="lazy">
+                    <img src="images/food-ex-1.webp" 
+                    srcset="images/food-ex-1.webp 400w, images/food-ex-1.webp 800w, images/food-ex-1.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Grilled Chipotle Chicken Tex Mex" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/food-ex-2.webp" alt="Tuna Sushi" loading="lazy">
+                    <img src="images/food-ex-2.webp" 
+                    srcset="images/food-ex-2.webp 400w, images/food-ex-2.webp 800w, images/food-ex-2.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Tuna Sushi" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/food-ex-3.webp" alt="Savory Lobster Roll on a Fresh Baked Rolll" loading="lazy">
+                    <img src="images/food-ex-3.webp" 
+                    srcset="images/food-ex-3.webp 400w, images/food-ex-3.webp 800w, images/food-ex-3.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Savory Lobster Roll on a Fresh Baked Rolll" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/food-ex-4.webp" alt="Crab Ragoon with Sweet Chili Sauce" loading="lazy">
+                    <img src="images/food-ex-4.webp" 
+                    srcset="images/food-ex-4.webp 400w, images/food-ex-4.webp 800w, images/food-ex-4.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Crab Ragoon with Sweet Chili Sauce" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/food-ex-5.webp" alt="Accordian Cut Pork Belly with Steam Broccoli and Reduced Spicy Tomato Sauce" loading="lazy">
+                    <img src="images/food-ex-5.webp" 
+                    srcset="images/food-ex-5.webp 400w, images/food-ex-5.webp 800w, images/food-ex-5.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Accordian Cut Pork Belly with Steam Broccoli and Reduced Spicy Tomato Sauce" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/food-ex-6.webp" alt="Shrimp Rice and Asparagus" loading="lazy">
+                    <img src="images/food-ex-6.webp" 
+                    srcset="images/food-ex-6.webp 400w, images/food-ex-6.webp 800w, images/food-ex-6.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Shrimp Rice and Asparagus" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/food-ex-7.webp" alt="Sous-Vide Bison Steak with Cauliflower Rice and Savory Broccoli Reduction" loading="lazy">
+                    <img src="images/food-ex-7.webp" 
+                    srcset="images/food-ex-7.webp 400w, images/food-ex-7.webp 800w, images/food-ex-7.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Sous-Vide Bison Steak with Cauliflower Rice and Savory Broccoli Reduction" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/food-ex-8.webp" alt="Quesabirria" loading="lazy">
+                    <img src="images/food-ex-8.webp" 
+                    srcset="images/food-ex-8.webp 400w, images/food-ex-8.webp 800w, images/food-ex-8.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Quesabirria" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/food-ex-9.webp" alt="Fresh Cheesecake with Strawberry Coulis" loading="lazy">
+                    <img src="images/food-ex-9.webp" 
+                    srcset="images/food-ex-9.webp 400w, images/food-ex-9.webp 800w, images/food-ex-9.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Fresh Cheesecake with Strawberry Coulis" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/food-ex-10.webp" alt="Seared Scallops on a Bed of Fried Leeks" loading="lazy">
+                    <img src="images/food-ex-10.webp" 
+                    srcset="images/food-ex-10.webp 400w, images/food-ex-10.webp 800w, images/food-ex-10.webp 1200w" 
+                    sizes="(max-width: 1180px) 40vw, 20vw"
+                    alt="Seared Scallops on a Bed of Fried Leeks" loading="lazy">
                 </div>
             </div>
 
@@ -222,7 +276,13 @@
 
         <!-- SECTION 5: CHEF -->
          <section id="chef">
-            <div class="chef-image"><img src="images/chef.webp" alt="Oliver King, owner of Culinary for Royalty" loading="lazy"></div>
+            <div class="chef-image">
+                <img src="images/chef.webp"
+                srcset="images/chef.webp 400w, images/chef.webp 800w, images/chef.webp 1200w" 
+                sizes="(max-width: 1180px) 0vw, 35vw" 
+                alt="Oliver King, owner of Culinary for Royalty"
+                loading="lazy">
+            </div>
             <div class="social">
                 <h2>Oliver King</h2>
                 <h3>The Chef Behind <em>Culinary for Royalty</em></h3>
@@ -238,7 +298,12 @@
                 <p class="tagline">
                     <strong class="tagline">Food fit for a <span class="underline">king</span>, from a <em>King</em>.</strong>
                 </p>
-                <div class="chef-image-alt"><img src="images/chef.webp" alt="Oliver King, owner of Culinary for Royalty" loading="lazy"></div>
+                <div class="chef-image-alt">
+                    <img src="images/chef.webp"
+                    srcset="images/chef.webp 400w, images/chef.webp 800w, images/chef.webp 1200w" 
+                    sizes="100vw" 
+                    alt="Oliver King, owner of Culinary for Royalty"
+                    loading="lazy"></div>
             </div>
          </section>
         
