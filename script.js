@@ -116,3 +116,24 @@ const calculate = (obj) => {
     }
     
 }
+
+// Auto-scroll gallery with seamless looping
+const galleryContainer = document.querySelector('.gallery-container');
+if (galleryContainer) {
+    const originalItems = Array.from(galleryContainer.children);
+    const originalWidth = galleryContainer.scrollWidth;
+
+    // Clone the original items and append them to create a seamless loop
+    originalItems.forEach(item => {
+        const clone = item.cloneNode(true);
+        galleryContainer.appendChild(clone);
+    });
+
+    // Now auto-scroll
+    setInterval(() => {
+        galleryContainer.scrollLeft += 1; // Adjust this value to change scroll speed (pixels per interval)
+        if (galleryContainer.scrollLeft >= originalWidth) {
+            galleryContainer.scrollLeft = 0; // Reset to start for seamless loop
+        }
+    }, 10); // Adjust this value to change scroll interval (milliseconds)
+}

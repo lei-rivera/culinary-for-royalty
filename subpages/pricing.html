@@ -28,7 +28,7 @@
         <header>
             <nav>
                 <div class="empty"></div>
-                <div>
+                <div class="not-empty">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
@@ -60,7 +60,7 @@
                 <div id="private-party-details" class="service-details hidden">
                     <div class="private-party-options">
                         <label for="party-guests"><h3>Number of Guests</h3></label>
-                        <input type="number" name="party-guests" id="party-guests" min="1">
+                        <input type="number" name="party-guests" id="party-guests" min="1" class="textbox service-space">
                         <h3>Service Style</h3>
                         <select name="private-party-service" id="private-party-service">
                             <option value="basic">Basic</option>
@@ -74,7 +74,7 @@
                 <div id="meal-prep-details" class="service-details hidden">
                     <div class="meal-prep-options">
                         <h3>Meals Per Week</h3>
-                        <input type="number" min="10" name="meals" id="meals">
+                        <input type="number" min="10" name="meals" id="meals" class="textbox service-space">
                         <p class="meal-prep-disclaimer">
                             <i>Minimum of 10 meals a week. Grocery costs are not included.</i>
                         </p>
@@ -85,7 +85,7 @@
                 <div id="catering-details" class="service-details hidden">
                     <div class="catering-options">
                         <label for="catering-guests"><h3>Number of Guests</h3></label>
-                        <input type="number" name="catering-guests" id="catering-guests" min="1">
+                        <input type="number" name="catering-guests" id="catering-guests" min="1" class="textbox service-space">
                         <h3>Service Style</h3>
                         <select name="catering-service" id="catering-service">
                             <option value="basic">Basic</option>
@@ -95,10 +95,21 @@
                     </div>
                     <hr>
                 </div>
-                <button class="button" onclick="calculate(this)">Calculate Price</button>
+                <button class="button price-button" onclick="calculate(this)">Calculate Price</button>
                 <div id="estimated-quote"></div>
             </div>
+            <div class="empty empty-price"></div>
          </main>
+
+         <!-- FOOTER -->
+         <footer>
+            <ul>
+                <li>&copy; Culinary for Royalty. All rights reserved.</li>
+                <li><a href="policies/privacy_policy.pdf">Privacy Policy</a></li>
+                <li><a href="policies/cookie_policy.pdf">Cookie Policy</a></li>
+                <li>Website Developed By <a href="https://lei-rivera.github.io/" class="underline">Lei Rivera</a></li>
+            </ul>
+         </footer>
     </body>
 
 </html>

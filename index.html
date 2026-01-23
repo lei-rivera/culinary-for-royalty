@@ -29,7 +29,7 @@
         <header>
             <nav>
                 <div class="empty"></div>
-                <div>
+                <div class="not-empty">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="subpages/menu.html">Menu</a></li>
@@ -43,7 +43,7 @@
 
         <!-- MAIN -->
         <main>
-            <h1><img src="images/logo.png" alt="Culinary for Royalty"></h1>
+            <h1 class="logo"><img src="images/logo.png" alt="Culinary for Royalty"></h1>
         </main>
 
         <!-- SECTION 1: EXPERIENCES -->
@@ -88,8 +88,8 @@
         <!-- SECTION 2: DAILY DINING -->
         <section id="daily-dining">
             <div class="section-box">
-                <h2>Elevate Your Daily Dining With A <span class="underline">Private Chef</span></h2>
-                <h3>Enjoy world-class cuisine, tailored to:</h3>
+                <h2 class="dd-title">Elevate Your Daily Dining With A <span class="underline">Private Chef</span></h2>
+                <h3 class="dd-title">Enjoy world-class cuisine, tailored to:</h3>
                 <ul class="checks">
                     <li><i class="fa-solid fa-check"></i> Your Taste</li>
                     <li><i class="fa-solid fa-check"></i> Your Time</i></li>
@@ -194,7 +194,7 @@
                     </p>
                 </div>
             </div>
-            <a href="#" class="button">See More Reviews</a>
+            <a href="https://www.google.com/search?sca_esv=20e61c84b11a2ebb&hl=en-US&gl=us&sxsrf=ANbL-n7z53pLfj-Zaq1JhoW6X6H_T9FvIQ:1769113280013&q=Culinary+For+Royalty,+N/A,+Orland+Park,+IL+60462&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qObtVkwo8ag_oJy-kTftoVsA6lmi-zKOutX_o4fKU8B8MvIj0Kt4S-6WwXPU7jgvEs9puVJv-UTAe8LMB9S82rhn98bxnbBNl_IaW88dj0n3u03jGaQ%3D%3D&sa=X&ved=2ahUKEwjnpv3E_J-SAxXPRjABHedIMe8QrrQLegQIIRAA&biw=1869&bih=967&dpr=1&aic=0" class="button">See More Reviews</a>
         </section>
 
         <!-- SECTION 5: CHEF -->
@@ -212,33 +212,20 @@
                 <p>
                     Every dish I prepare is tailored to you, with the care and quality of fine dining.
                 </p>
-                <p>
-                    <strong>Food fit for a king, from a King.</strong>
+                <p class="tagline">
+                    <strong class="tagline">Food fit for a <span class="underline">king</span>, from a <em>King</em>.</strong>
                 </p>
+                <div class="chef-image-alt"><img src="images/chef.jpg" alt="Oliver King, owner of Culinary for Royalty"></div>
             </div>
          </section>
         
         <!-- SECTION 6: CONTACT -->
          <section id="contact">
             <h2>Book Your Experience Today</h2>
-            <p>
+            <p class="contact">
                 Save time with a private chef. Tell us about your needs.
             </p>
             <div class="contact-container">
-                <div class="socials">
-                    <div class="social-box">
-                        <h5>Email</h5>
-                        <a href="mailto:oliver@culinaryforroyalty.com">oliver@culinaryforroyalty.com</a>
-                    </div>
-                    <div class="social-box">
-                        <h5>Phone</h5>
-                        <a href="tel:708-808-7383">708-808-7383</a>
-                    </div>
-                    <div class="social-box">
-                        <h5>Instagram<i class="fa-brands fa-instagram"></i></h5>
-                        <a href="https://www.instagram.com/culinaryforroyalty">@culinaryforroyalty</a>
-                    </div>
-                </div>
                 <div class="form">
                     <form action="#">
                         <!-- HP Div -->
@@ -257,7 +244,7 @@
                         </div>
 
                         <!-- City -->
-                        <div class="form-info name">
+                        <div class="form-info city">
                             <label for="city">City</label>
                             <input type="text" name="city" id="city" class="textbox" required />
                         </div>
@@ -289,6 +276,22 @@
                         </div>
                     </form>
                 </div>
+                <div class="socials">
+                    <div class="social-box">
+                        <h5>Email</h5>
+                        <a href="mailto:oliver@culinaryforroyalty.com">oliver@culinaryforroyalty.com</a>
+                    </div>
+                    <hr>
+                    <div class="social-box">
+                        <h5>Phone</h5>
+                        <a href="tel:708-808-7383">708-808-7383</a>
+                    </div>
+                    <hr>
+                    <div class="social-box">
+                        <h5>Instagram<i class="fa-brands fa-instagram"></i></h5>
+                        <a href="https://www.instagram.com/culinaryforroyalty">@culinaryforroyalty</a>
+                    </div>
+                </div>
             </div>
             
          </section>
@@ -297,8 +300,9 @@
          <footer>
             <ul>
                 <li>&copy; Culinary for Royalty. All rights reserved.</li>
-                <li>View Our Policies <a href="subpages/policies.html">Here</a></li>
-                <li>Website Developed By <a href="https://lei-rivera.github.io/">Lei Rivera</a></li>
+                <li><a href="policies/privacy_policy.pdf">Privacy Policy</a></li>
+                <li><a href="policies/cookie_policy.pdf">Cookie Policy</a></li>
+                <li>Website Developed By <a href="https://lei-rivera.github.io/" class="underline">Lei Rivera</a></li>
             </ul>
          </footer>
     </body>
