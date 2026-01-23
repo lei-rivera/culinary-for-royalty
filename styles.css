@@ -155,7 +155,7 @@ header ul {
 ************************************************/
 
 main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/header.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/header.webp);
     background-size: cover;
     background-position: center 70%;
     background-attachment: fixed;
@@ -353,7 +353,7 @@ i.fa-circle-user {
 .social {
     padding: 8dvh 5dvw;
     width: 65%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(images/anh-nguyen-kcA-c3f_3FE-unsplash.webp);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -486,8 +486,8 @@ footer ul {
     color: white;
 
     main {
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/mae-mu-Pvclb-iHHYY-unsplash.jpg); */
-        background-image: url(images/mae-mu-Pvclb-iHHYY-unsplash.jpg);
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/mae-mu-Pvclb-iHHYY-unsplash.webp); */
+        background-image: url(images/mae-mu-Pvclb-iHHYY-unsplash.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-color: black;
@@ -515,7 +515,7 @@ footer ul {
     }
 
     #meal-prep {
-        background-image: url(images/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg);
+        background-image: url(images/hermes-rivera-Ww8eQWjMJWk-unsplash.webp);
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -534,7 +534,7 @@ footer ul {
     }
 
     #private-events {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/lidye-1Shk_PkNkNw-unsplash.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/lidye-1Shk_PkNkNw-unsplash.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -568,8 +568,8 @@ footer ul {
     color: white;
 
     main {
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/pricing-bg.jpg); */
-        background-image: url(images/carolina-cossio-2J0NkF2cFlI-unsplash.jpg);
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/pricing-bg.webp); */
+        background-image: url(images/carolina-cossio-2J0NkF2cFlI-unsplash.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
@@ -762,7 +762,7 @@ footer ul {
     .subpage-menu {
         /* MAIN */
         main {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/mae-mu-Pvclb-iHHYY-unsplash.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/mae-mu-Pvclb-iHHYY-unsplash.webp);
             background-position: bottom;
             flex-direction: column;
             gap: 8dvh;
@@ -791,7 +791,7 @@ footer ul {
 
     .subpage-pricing {
         main {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/carolina-cossio-2J0NkF2cFlI-unsplash.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/carolina-cossio-2J0NkF2cFlI-unsplash.webp);
             background-size: cover;
             background-position: top;
             padding: 0 10dvw;
