@@ -44,6 +44,8 @@ const calculate = (obj) => {
             if (partyGuests.value < 1) {
                 alert("Please enter a valid number of guests for private party service.");
                 return;
+            } else if (partyGuests.value >=1 && partyGuests.value <5) {
+                estimatedQuote.innerHTML = "Estimated Price: $350"
             } else {
                 guestFee = 85;
                 estimatedQuote.innerHTML = "Estimated Price: $" + (guestFee * partyGuests.value);
@@ -54,6 +56,8 @@ const calculate = (obj) => {
             if (partyGuests.value < 1) {
                 alert("Please enter a valid number of guests for private party service.");
                 return;
+            } else if (partyGuests.value == 1) {
+                estimatedQuote.innerHTML = "Estimated Price: $350"
             } else {
                 guestFee = 195;
                 estimatedQuote.innerHTML = "Estimated Price: $" + (guestFee * partyGuests.value);
@@ -64,10 +68,12 @@ const calculate = (obj) => {
             if (partyGuests.value < 1) {
                 alert("Please enter a valid number of guests for private party service.");
                 return;
+            } else if (partyGuests.value == 1) {
+                estimatedQuote.innerHTML = "Estimated Price: $350"
             } else {
                 guestFee = 300;
                 estimatedQuote.innerHTML = "Estimated Price: $" + (guestFee * partyGuests.value);
-            } 
+            }
         }
 
     } else if (serviceOption === "meal-prep") {
