@@ -612,6 +612,19 @@ footer ul {
     .service-space {
         margin-bottom: 1dvh;
     }
+
+    .price-box {
+        width: 40%;
+    }
+
+    .disclaimer {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.429);
+    }
+
+    span.disclaimer {
+        font-size: inherit;
+    }
 }
 
 /***********************************************
