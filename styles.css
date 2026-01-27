@@ -628,6 +628,35 @@ footer ul {
 }
 
 /***********************************************
+*** SUBPAGE: SUCCESS
+************************************************/
+
+.subpage-success {
+    background-color: black;
+
+    main {
+        background-image: url(images/original-imgs/helen-van-i9lPk8PJCZg-unsplash.jpg);
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 20dvw;
+    }
+}
+
+.success-box {
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+
+.success-check {
+    font-size: 8rem;
+    margin-bottom: 5dvh;
+}
+
+/***********************************************
 *** MOBILE LAYOUT
 ************************************************/
 
@@ -868,5 +897,20 @@ footer ul {
             width: 100%;
         }
     }
+
+    /***** SUBPAGE: Success *****/
+    .subpage-success main {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/original-imgs/helen-van-i9lPk8PJCZg-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .subpage-success header {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
 
 }
