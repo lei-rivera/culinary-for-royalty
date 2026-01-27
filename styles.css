@@ -912,5 +912,9 @@ footer ul {
         background-color: rgba(0, 0, 0, 0);
     }
 
+    .success-box {
+        width: 80%;
+    }
+
 
 }
